@@ -7,7 +7,7 @@ you can go check it out in my website:
 
 http://sarband.tk/pages/projects.php
 
-things I used for this game:
+things we used for this game:
 
 1- anime.js </br>
 2- ajax.js </br>
