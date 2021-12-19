@@ -1,0 +1,204 @@
+*{
+    margin:0;
+    padding: 0;
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+}
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+.background{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-image: url("/images/ground.jpg");
+    background-repeat: repeat;
+}
+.alert {
+    font: 14px Arial, sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    border: 1px solid lightgray;
+    box-shadow: 3px 3px 12px lightgray;
+  }
+.question {
+     margin: 12px;
+    
+}
+  
+.alert .buttons {
+    float: right
+}
+
+.border{
+    width: 100%;
+    height:500px;
+    background-image: url("/images/background.jpg");
+    position:relative;
+}
+.border img{ 
+    padding-top: 200px;
+    height: 150px;
+}
+#character{
+    margin-left: -100px;
+}
+.welcomeBox{
+  display: none;
+  visibility: hidden;
+}
+.hide{
+    visibility: hidden;
+    display: none;
+}
+
+.center{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+.center img{
+    width: 100px;
+    margin-top: 20px;
+}
+.levelOne{
+color: white;
+font-size: 60px;
+text-align: center;
+animation-name: fade-in;
+animation-duration: 2s;
+}
+.welcomeBox.show{
+    visibility: visible;
+    display: inline;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 50%;
+    background-color: rgba(174,222,203,255);
+    width: 500px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 50px;
+    animation-name: fade-in;
+    animation-duration: 2s;
+}
+.letsplay{
+    display: none;
+    visibility: hidden;
+  }
+.letsplay.show{
+    visibility: visible;
+    display: inline;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 50%;
+    background-color: rgba(174,222,203,255);;
+    width: 500px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 50px;
+    animation-name: fade-in;
+    animation-duration: 2s;
+}
+.welcomeBox p{
+    text-align: center;  
+    
+
+}
+.letsplay p{
+    text-align: center;  
+    
+
+}
+
+.start{
+    margin-top: 50px;
+    width: 300px;
+    height: 70px;
+    background-color: white;
+    border-radius: 20px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.start:hover{
+    cursor: pointer;
+    background-color: aquamarine;
+    animation-name: fade-in;
+    animation-duration: 2s;
+}
+.loading{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    animation-name: fade-in;
+    animation-duration: 2s;
+}
+
+.PlayBox{
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ z-index: 101;
+}
+.box{
+    background-color: black;
+    height: 500px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: solid white 3px;
+    row-gap: 40px;
+}
+
+.Title{
+    color: white;
+    font-size: 40px;
+}
+.Detail{
+    font-size: 28px;
+    color: white;
+}
+#enable{
+    width: 400px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 30px;
+}
+#enable:hover{
+    cursor: pointer;
+    font-weight: bold;
+    background-color: silver;
+}
+
+
+
+@keyframes fade-in{
+   0%{ opacity: 0;}
+    100%{opacity: 1;}
+}
